@@ -6,7 +6,7 @@
         if (track) {
             const items = document.querySelectorAll(".carousel-item");
             const totalItems = items.length;
-            const itemWidth = items[0].offsetWidth + 15; // largura do item + margem
+            const itemWidth = items[0].offsetWidth + 5; // largura do item + margem
             let currentIndex = 0;
     
             function updateCarousel() {
