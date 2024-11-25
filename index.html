@@ -1,0 +1,111 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <title>TCC</title>
+    <link rel="stylesheet" href="tcc.css">
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap" rel="stylesheet">
+</head>
+<body>
+    <header class="navbar">
+        <nav>
+            <ul class="menu">
+                <li><a href="index.html" class="cabeçalho">Home</a></li>
+                <li><a href="sobre.html" class="cabeçalho">Sobre Nós</a></li>
+                <li class="search-container">
+                    <input type="text" id="searchInput" class="searchInput" placeholder="Pesquisar...">
+                </li>
+            </ul>
+            <div class="menu-toggle" onclick="toggleMenu()">☰</div>
+        </nav>
+    </header>    
+
+    <!-- Texto Introdutório -->
+    <section class="intro-text">
+        <h1>Bem-vindo ao Mundo dos Componentes de Computador</h1>
+        <p>Este site foi desenvolvido como parte de um TCC do curso de Manutenção de Computadores...</p>
+        <p>Nossa guia é estruturado com três perguntas principais:</p>
+        <ol>
+            <li><strong>Para que serve?</strong> Entenda a função exata de cada peça;</li>
+            <li><strong>Quando foi criado?</strong> Descubra a história por trás do desenvolvimento;</li>
+            <li><strong>Quem inventou?</strong> Conheça as pessoas por trás dessas inovações;</li>
+        </ol>
+        <p>Explore cada peça e descubra o fascinante mundo dos componentes de computador...</p>
+    </section>
+
+    <!-- Carrossel de temas -->
+    <div class="carousel-container">
+        <button class="nav-button" id="prevBtn">Anterior</button>
+        <div class="carousel">
+            <div class="carousel-track">
+                <div class="carousel-item" data-page="cabo-alimentação.html">
+                    Cabo de Alimentação
+                    <img src="imagens PNG/cabo de alimentação.webp" alt="Cabo de Alimentação"   >
+                </div>
+                <div class="carousel-item" data-page="cabo-rede.html">
+                    Cabo de Rede
+                    <img src="imagens PNG/cabo de rede.webp" alt="Cabo de Rede">
+                </div>
+                <div class="carousel-item" data-page="cabo-sata.html">
+                    Cabo SATA
+                    <img src="imagens PNG/cabo sata.png" alt="Cabo SATA">
+                </div>
+                <div class="carousel-item" data-page="cabo-vga.html">
+                    Cabo VGA
+                    <img  src="imagens PNG/vga.png" alt="Cabo VGA">
+                </div>
+                <div class="carousel-item" data-page="cooler.html">
+                    Cooler
+                    <img src="imagens PNG/cooler.webp" alt="Cooler">
+                </div>
+                <div class="carousel-item" data-page="disquete.html">
+                    Disquete
+                    <img src="imagens PNG/disquete.webp" alt="Disquete">
+                </div>
+                <div class="carousel-item" data-page="hd-Memória.html">
+                    HD (Hard Disc)
+                    <img src="imagens PNG/hd.webp" alt="HD">
+                </div>
+                <div class="carousel-item" data-page="leitor-cd.html">
+                    Leitor de CD
+                    <img src="imagens PNG/leitor de cd.png" alt="Leitor de CD">
+                </div>
+                <div class="carousel-item" data-page="memoria-ram.html">
+                    Memória RAM
+                    <img src="imagens PNG/memoria ram.png" alt="Memória RAM">
+                </div>
+                <div class="carousel-item" data-page="placa-mãe.html">
+                    Placa Mãe
+                    <img src="imagens PNG/placa mãe.webp" alt="Placa Mãe">
+                </div>
+                <div class="carousel-item" data-page="placa-video.html">
+                    Placa de Vídeo
+                    <img src="imagens PNG/placa de vídeo.png" alt="Placa de Vídeo">
+                </div>
+                <div class="carousel-item" data-page="processador.html">
+                    Processador
+                    <img src="imagens PNG/procesador.png" alt="Processador">
+                </div>
+                <div class="carousel-item" data-page="raspberry.html">
+                    Raspberry
+                    <img src="imagens PNG/raspberry.png" alt="Raspberry">
+                </div>
+                <div class="carousel-item" data-page="roteador-wifi.html">
+                    Roteador Wi-Fi
+                    <img src="imagens PNG/roteador.webp" alt="Roteador Wi-Fi">
+                </div>
+                <div class="carousel-item" data-page="fonte_de_energia.html">
+                    Fonte de Energia
+                    <img src="imagens PNG/fonte.webp" alt="Fonte de Energia">
+                </div>
+            </div>
+        </div>
+        <button class="nav-button" id="nextBtn">Próximo</button>
+    </div>
+
+    <script src="home.js"></script>
+    <footer class="footer">
+        <p>© 2024 Componentes de Computador. Todos os direitos reservados.</p>
+    </footer>
+</body>
+</html>
