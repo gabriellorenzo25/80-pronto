@@ -382,8 +382,9 @@ body {
 
     .carousel-item {
         font-size: 40px;
-        margin: 0;
+        margin: 100px;
         padding: 0;
+    }
     }
 
     .nav-button {
